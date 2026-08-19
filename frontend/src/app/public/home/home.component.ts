@@ -28,7 +28,8 @@ export interface InfoSlide {
   styles: [`
     /* Hero Section */
     .hero {
-      background: linear-gradient(135deg, #013828 0%, #015C3A 60%, #017A4A 100%);
+      background: linear-gradient(135deg, rgba(1, 56, 40, 0.88) 0%, rgba(1, 92, 58, 0.82) 60%, rgba(1, 122, 74, 0.85) 100%),
+                  url('/images/login-bg.jpg') center/cover no-repeat;
       color: white;
       padding: 5.5rem 1.5rem 4.5rem 1.5rem;
       text-align: center;
@@ -557,7 +558,7 @@ export interface InfoSlide {
       height: 200px;
       background: #F1F5F9;
       background-size: cover;
-      background-position: center;
+      background-position: center top;
       position: relative;
     }
     .card-img::after {
@@ -593,7 +594,7 @@ export interface InfoSlide {
       font-weight: 700;
       letter-spacing: 0.5px;
     }
-    .badge.male { background: rgba(1, 92, 58, 0.1); color: var(--color-primary); border: 1px solid rgba(1, 92, 58, 0.25); }
+    .badge.male { background: #E0F2FE; color: #0369A1; border: 1px solid #7DD3FC; }
     .badge.female { background: #FCE4EC; color: #C2185B; border: 1px solid #F48FB1; }
 
     .rating-badge {

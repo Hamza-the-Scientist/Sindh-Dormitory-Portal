@@ -39,15 +39,15 @@ import { RouterModule } from '@angular/router';
     }
     .auth-bg-image {
       position: absolute;
-      top: -15px;
-      left: -15px;
-      right: -15px;
-      bottom: -15px;
-      background: url('https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
-      filter: blur(10px);
+      top: -20px;
+      left: -20px;
+      right: -20px;
+      bottom: -20px;
+      background: url('/images/login-bg.jpg') center/cover no-repeat;
+      filter: blur(8px);
       transform: scale(1.05);
       z-index: 1;
-      opacity: 0.15;
+      opacity: 0.45;
     }
     .auth-header {
       background: linear-gradient(135deg, #013828 0%, #015C3A 100%);

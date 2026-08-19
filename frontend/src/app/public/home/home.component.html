@@ -148,7 +148,7 @@
       <div class="card" *ngFor="let hostel of filteredHostels">
         <!-- Fallback image logic via style -->
         <div class="card-img"
-          [style.background-image]="hostel.mainImageUrl ? 'url(' + hostel.mainImageUrl + ')' : 'url(assets/placeholder-hostel.jpg)'">
+          [style.background-image]="hostel.mainImageUrl ? 'url(&quot;' + hostel.mainImageUrl + '&quot;)' : 'url(assets/placeholder-hostel.jpg)'">
         </div>
 
         <div class="card-body">

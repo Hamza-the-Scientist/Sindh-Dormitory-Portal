@@ -23,7 +23,7 @@ import { MeritService, ChallanListDto } from '../merit-result/merit.service';
           <div class="challan-card">
             <div class="card-badge info">Processing Fee</div>
             <h3>Application Processing Fee</h3>
-            <div class="amount">PKR 1,500</div>
+            <div class="amount">PKR 200</div>
             <div class="info-row"><span>Status:</span> <strong>{{ c.processingFeeChallan?.status || 'Paid' }}</strong></div>
             <div class="info-row"><span>Challan #:</span> <code>{{ c.processingFeeChallan?.challanNumber || 'PF-2026-8841' }}</code></div>
             <button class="btn btn-outline" (click)="downloadReceipt('Processing Fee')">⬇ Download Receipt</button>
