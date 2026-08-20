@@ -205,7 +205,7 @@ export interface InfoSlide {
     .ticker {
       display: inline-block;
       white-space: nowrap;
-      animation: ticker 25s linear infinite;
+      animation: ticker 34s linear infinite;
     }
     .ticker-item {
       display: inline-block;
@@ -214,8 +214,10 @@ export interface InfoSlide {
       font-weight: 700;
     }
     @keyframes ticker {
-      0% { transform: translate3d(100%, 0, 0); }
-      100% { transform: translate3d(-100%, 0, 0); }
+      0% { transform: translate3d(100vw, 0, 0); }
+      10% { transform: translate3d(20vw, 0, 0); }  /* Rushes in very fast over the first 10% of time */
+      95% { transform: translate3d(-100%, 0, 0); } /* Scrolls slowly across the screen */
+      100% { transform: translate3d(-110%, 0, 0); } 
     }
 
     /* Info Banner Section with Right-Side Dissolving Study Hall Slider */
